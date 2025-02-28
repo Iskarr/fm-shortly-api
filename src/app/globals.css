@@ -34,7 +34,8 @@ body {
   position: relative;
 }
 
-.hero-img {
-  background-position: -20px -20px; /* Move 20px left and 20px up */
+.callToAction-img {
+  background-image: url(../../public/images/bg-boost-desktop.svg);
+  background-position: 0px -10px; /* Move 20px left and 20px up */
   position: relative;
 }

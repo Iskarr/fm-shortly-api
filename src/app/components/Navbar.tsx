@@ -10,8 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-4 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <nav className="py-4 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto">
+        {/* Changed from max-w-7xl to max-w-4xl to match other components */}
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <div className="flex-shrink-0">
@@ -37,7 +38,7 @@ const Navbar = () => {
             </Link>
             <Link
               href="#"
-              className="bg-teal-500 text-white px-4 py-2 rounded-full font-medium hover:bg-teal-600 transition-colors"
+              className="bg-(--Cyan) text-white px-4 py-2 rounded-full font-medium hover:bg-teal-600 transition-colors"
             >
               Sign Up
             </Link>
@@ -85,7 +86,9 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden mt-4">
-          <div className="bg-white rounded-lg shadow-lg p-4 space-y-2">
+          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-4 space-y-2">
+            {" "}
+            {/* Added max-w-4xl and mx-auto here too */}
             <Link
               href="#"
               className="block py-2 text-center text-gray-600 hover:text-gray-800"

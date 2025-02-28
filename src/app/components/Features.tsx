@@ -8,7 +8,7 @@ const FeatureCard = ({
   description: string;
 }) => (
   <div className="bg-white p-6 rounded-lg shadow-sm">
-    <div className="bg-indigo-900 w-16 h-16 rounded-full flex items-center justify-center -mt-12 mb-4 mx-auto">
+    <div className="bg-(--DarkViolet) w-16 h-16 rounded-full flex items-center justify-center -mt-12 mb-4 mx-auto">
       {icon}
     </div>
     <h3 className="font-bold text-lg mb-2 text-center">{title}</h3>
@@ -34,7 +34,7 @@ const Features = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
           {/* Connecting line between cards */}
-          <div className="hidden md:block absolute h-2 bg-teal-500 top-1/2 left-0 right-0 z-0"></div>
+          <div className="hidden md:block absolute h-2 bg-(--Cyan) top-1/2 left-0 right-0 z-0"></div>
 
           {/* Feature cards with z-index to appear above the line */}
           <div className="relative z-10 mt-0">

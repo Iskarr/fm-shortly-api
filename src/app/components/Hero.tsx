@@ -20,7 +20,7 @@ const Hero = () => {
             </p>
             <div className="flex justify-center md:justify-start">
               {/* Center the button on mobile */}
-              <button className="bg-teal-500 hover:bg-teal-600 text-white font-medium py-3 px-12 rounded-full transition-colors mb-16 mt-8 md:mb-0">
+              <button className="bg-(--Cyan) hover:bg-teal-600 text-white font-medium py-3 px-12 rounded-full transition-colors mb-16 mt-8 md:mb-0">
                 {/* Added margin-bottom on mobile */}
                 Get Started
               </button>
