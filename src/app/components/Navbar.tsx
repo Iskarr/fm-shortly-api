@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="py-4 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+    <nav className="py-4 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto relative z-50">
       <div className="max-w-4xl mx-auto">
         {/* Changed from max-w-7xl to max-w-4xl to match other components */}
         <div className="flex items-center justify-between">
@@ -83,40 +83,38 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu - positioned absolutely to overlap content */}
       {isOpen && (
-        <div className="md:hidden mt-4">
-          <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-4 space-y-2">
-            {" "}
-            {/* Added max-w-4xl and mx-auto here too */}
+        <div className="md:hidden absolute left-0 right-0 px-4 mt-4 z-50">
+          <div className="max-w-4xl mx-auto bg-(--DarkViolet) rounded-lg shadow-lg p-4 space-y-2">
             <Link
               href="#"
-              className="block py-2 text-center text-gray-600 hover:text-gray-800"
+              className="block py-2 text-center text-white poppins-semibold hover:text-gray-800"
             >
               Features
             </Link>
             <Link
               href="#"
-              className="block py-2 text-center text-gray-600 hover:text-gray-800"
+              className="block py-2 text-center text-white poppins-semibold hover:text-gray-800"
             >
               Pricing
             </Link>
             <Link
               href="#"
-              className="block py-2 text-center text-gray-600 hover:text-gray-800"
+              className="block py-2 text-center text-white poppins-semibold hover:text-gray-800"
             >
               Resources
             </Link>
-            <hr className="my-2" />
+            <hr className="my-2 text-(--Gray) opacity-30" />
             <Link
               href="#"
-              className="block py-2 text-center text-gray-600 hover:text-gray-800"
+              className="block py-2 text-center text-white poppins-bold hover:text-gray-800"
             >
               Login
             </Link>
             <Link
               href="#"
-              className="block bg-teal-500 text-white py-2 rounded-full text-center font-medium hover:bg-teal-600 transition-colors"
+              className="block bg-(--Cyan) text-white py-4 poppins-bold rounded-full text-center font-medium hover:bg-(--Cyan) transition-colors mx-auto w-4/5"
             >
               Sign Up
             </Link>
