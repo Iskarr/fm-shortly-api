@@ -6,8 +6,13 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --Cyan: hsl(180, 66%, 49%);
+  --DarkViolet: hsl(257, 27%, 26%);
+  --Red: hsl(0, 87%, 67%);
+  --Gray: hsl(0, 0%, 75%);
+  --GrayishViolet: hsl(257, 7%, 63%);
+  --VeryDarkBlue: hsl(255, 11%, 22%);
+  --VeryDarkViolet: hsl(260, 8%, 14%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,7 +23,18 @@
 }
 
 body {
-  color: var(--foreground);
+  /* color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; */
+}
+
+.link-bg-img {
+  background-image: url(../../public/images/bg-shorten-desktop.svg);
+  background-position: -20px -20px; /* Move 20px left and 20px up */
+  position: relative;
+}
+
+.hero-img {
+  background-position: -20px -20px; /* Move 20px left and 20px up */
+  position: relative;
 }

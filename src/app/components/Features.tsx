@@ -18,7 +18,9 @@ const FeatureCard = ({
 
 const Features = () => {
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
+    <div className="py-20 px-4 sm:px-6 lg:px-8 bg-(--Gray) pt-40 -mt-28">
+      {" "}
+      {/* Added padding-top to make room for the overlap */}
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -38,14 +40,11 @@ const Features = () => {
           <div className="relative z-10 mt-0">
             <FeatureCard
               icon={
-                <svg
-                  className="w-8 h-8 text-teal-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
-                  <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
-                </svg>
+                <img
+                  src="/images/icon-brand-recognition.svg"
+                  alt="Brand Recognition"
+                  className="w-8 h-8"
+                />
               }
               title="Brand Recognition"
               description="Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instill confidence in your content."
@@ -55,17 +54,11 @@ const Features = () => {
           <div className="relative z-10 mt-8 md:mt-4">
             <FeatureCard
               icon={
-                <svg
-                  className="w-8 h-8 text-teal-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
+                <img
+                  src="/images/icon-detailed-records.svg"
+                  alt="Detailed Records"
+                  className="w-8 h-8"
+                />
               }
               title="Detailed Records"
               description="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
@@ -75,17 +68,11 @@ const Features = () => {
           <div className="relative z-10 mt-8 md:mt-8">
             <FeatureCard
               icon={
-                <svg
-                  className="w-8 h-8 text-teal-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
+                <img
+                  src="/images/icon-fully-customizable.svg"
+                  alt="Fully Customizable"
+                  className="w-8 h-8"
+                />
               }
               title="Fully Customizable"
               description="Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."

@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Navbar />
-      <main>
+      <main className="w-full overflow-hidden relative">
         <Hero />
         <LinkShortener />
         <Features />
