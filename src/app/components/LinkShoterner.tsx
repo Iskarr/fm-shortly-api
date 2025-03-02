@@ -79,13 +79,16 @@ const LinkShortener = () => {
     try {
       console.log("Attempting to shorten URL:", url);
       // Call the URL shortening service
-      const response = await fetch("http://localhost:3001/api/shorten", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ url }),
-      });
+      const response = await fetch(
+        "https://shortly-api-alpha.vercel.app/api/shorten",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ url }),
+        }
+      );
 
       // Parse the JSON response
       const result = await response.json();
