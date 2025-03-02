@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { shortenUrl } from "@/api/Shorten";
 
 interface ShortenedLink {
   originalUrl: string;
@@ -79,7 +78,6 @@ const LinkShortener = () => {
 
     try {
       console.log("Attempting to shorten URL:", url);
-
       // Call the URL shortening service
       const response = await fetch("http://localhost:3001/api/shorten", {
         method: "POST",
@@ -109,19 +107,15 @@ const LinkShortener = () => {
 
         setShortenedLinks(newLinks);
 
-        // Clear the input field
         setUrl("");
       } else {
-        // Handle API error with the error message from the response
         console.error("URL shortening failed:", result.error);
         setError(result.error || "Failed to shorten URL");
       }
     } catch (err) {
-      // Handle unexpected errors (network issues, etc.)
       console.error("Exception while shortening URL:", err);
       setError("An unexpected error occurred. Please try again.");
     } finally {
-      // Always reset loading state
       setIsLoading(false);
       console.log("URL shortening process completed");
     }
@@ -130,7 +124,6 @@ const LinkShortener = () => {
   const copyToClipboard = (text: string, index: number) => {
     navigator.clipboard.writeText(text);
 
-    // Create a new array with the copied status updated
     const updatedLinks = shortenedLinks.map((link, i) => {
       if (i === index) {
         return { ...link, copied: true };
