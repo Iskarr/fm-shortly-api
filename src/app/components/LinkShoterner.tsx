@@ -48,6 +48,7 @@ const LinkShortener = () => {
       new URL(urlString);
       return true;
     } catch (err) {
+      console.log("something went wrong in isValidUrl", err);
       return false;
     }
   };

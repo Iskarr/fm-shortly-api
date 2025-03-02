@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -114,28 +114,52 @@ const Footer = () => {
               className="text-gray-400 hover:text-white transition-colors"
             >
               <span className="sr-only">Facebook</span>
-              <img src="/images/icon-facebook.svg" alt="facebook logo" />
+              <Image
+                src="/images/icon-facebook.svg"
+                alt="facebook logo"
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+              />
             </a>
             <a
               href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <span className="sr-only">Twitter</span>
-              <img src="/images/icon-twitter.svg" alt="twitter logo" />
+              <Image
+                src="/images/icon-twitter.svg"
+                alt="twitter logo"
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+              />
             </a>
             <a
               href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <span className="sr-only">Pinterest</span>
-              <img src="/images/icon-pinterest.svg" alt="pinterest logo" />
+              <Image
+                src="/images/icon-pinterest.svg"
+                alt="pinterest logo"
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+              />
             </a>
             <a
               href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <span className="sr-only">Instagram</span>
-              <img src="/images/icon-instagram.svg" alt="instagram logo" />
+              <Image
+                src="/images/icon-instagram.svg"
+                alt="instagram logo"
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "auto" }}
+              />
             </a>
           </div>
         </div>
